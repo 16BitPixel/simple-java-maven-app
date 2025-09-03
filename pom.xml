@@ -7,6 +7,11 @@
   <version>1.0-SNAPSHOT</version>
   <name>my-app</name>
   <url>https://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
   <dependencies>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
@@ -15,9 +20,7 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+
   <build>
     <pluginManagement>
       <plugins>
@@ -33,7 +36,6 @@
     </pluginManagement>
     <plugins>
       <plugin>
-        <!-- Build an executable JAR -->
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
         <version>3.4.2</version>
